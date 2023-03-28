@@ -126,8 +126,18 @@ h3 {
 }
 
 .card a {
+    display: flex;
+    flex-direction: column;
     color: var(--light);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .card img {
+    max-width: 350px;
+} */
+
+#first-project img {
+    width: 500px;
 }
 
 .card:hover {
