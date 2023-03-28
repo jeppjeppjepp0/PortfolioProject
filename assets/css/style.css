@@ -77,7 +77,8 @@ h2 {
 aside p {
     color: var(--dark);
     font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
+    padding: 15px;
+    line-height: 125%;
 }
 
 .card-container {
@@ -96,7 +97,7 @@ aside p {
     margin: 20px;
     padding: 10px;
     min-width: 250px;
-    max-width: 350px;
+    /* max-width: 350px; */
     text-align: center;
 }
 
@@ -119,13 +120,14 @@ h3 {
 .card p {
     line-height: 150%;
     margin: 10px;
-    max-width: 80%;
+    max-width: 375px;
     color: var(--light);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card a {
     color: var(--light);
-    align-self: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card:hover {
@@ -161,6 +163,11 @@ h4 {
 
 .contact a:hover {
     color: var(--accent);
+}
+
+h5 {
+    color: var(--dark);
+    text-align: center;
 }
 
 @media screen and (max-width: 992px) {
