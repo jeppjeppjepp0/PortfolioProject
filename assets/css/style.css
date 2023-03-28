@@ -132,12 +132,12 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* .card img {
+.card img {
     max-width: 350px;
-} */
+}
 
-#first-project img {
-    width: 500px;
+#first img {
+    max-width: 500px;
 }
 
 .card:hover {
