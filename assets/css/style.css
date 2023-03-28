@@ -1,0 +1,80 @@
+:root{
+    /* color variables */
+    --primary: cadetblue;
+    --accent: crimson;
+    --light: mistyrose;
+    --dark: darkslategrey;
+
+    /* misc */
+    --radius: 4%;
+}
+
+/* begin header */
+header {
+    display: flex;
+    background-color: var(--primary);
+    border: var(--accent);
+    border-style: double;
+    border-width: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light);
+    margin: 10px;
+}
+
+nav {
+    background-color: var(--primary);
+    border-bottom: 5px --light;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 8px;
+    color: var(--light);
+}
+/* end header */
+
+/* main starts */
+main{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 576px;
+}
+
+aside img {
+    width: 576px;
+    height: 384px;
+}
+
+.card-container {
+    display: flex;
+    background-color: var(--dark);
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 5px var(--dark);
+    min-width: 400px;
+}
+
+h3 {
+    color: var(--light);
+}
+
+@media screen and (max-width: 992px) {
+    main,
+    .card-container {
+        flex-direction: column;
+    }
+}
