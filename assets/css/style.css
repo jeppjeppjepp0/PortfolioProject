@@ -4,9 +4,6 @@
     --accent: crimson;
     --light: mistyrose;
     --dark: darkslategrey;
-
-    /* misc */
-    --radius: 4%;
 }
 
 /* begin header */
@@ -30,14 +27,24 @@ nav {
     border-bottom: 5px --light;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
+    align-content: center;
 }
 
-li {
+nav li {
     margin: 8px;
+}
+
+nav a {
     color: var(--light);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
 /* end header */
 
@@ -50,6 +57,8 @@ main{
 
 aside {
     width: 576px;
+    /* background-color: var(--light); */
+    background-image: linear-gradient(var(--light), var(--primary));
 }
 
 aside img {
@@ -57,24 +66,111 @@ aside img {
     height: 384px;
 }
 
+h2 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    color: var(--dark);
+    padding: 10px;
+}
+
+aside p {
+    color: var(--dark);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
 .card-container {
     display: flex;
     background-color: var(--dark);
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .card {
-    border: 5px var(--dark);
-    min-width: 400px;
+    border: var(--accent);
+    border-width: 5px;
+    border-style: solid;
+    transition: all 0.25s ease-in-out;
+    margin: 20px;
+    padding: 10px;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
 }
 
 h3 {
+    display: relative;
+    margin-top: -30px;
+    margin-left: 10px;
+
+    background-color: var(--primary);
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+
+    border: solid var(--accent);
+    border-width: 5px;
+}
+
+.card p {
+    line-height: 150%;
+    margin: 10px;
+    max-width: 80%;
     color: var(--light);
 }
 
+.card a {
+    color: var(--light);
+    align-self: flex-end;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px 5px var(--light);
+}
+
+footer {
+    background-color: var(--primary);
+    border: double var(--accent);
+    border-width: 5px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light);
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.contact ul{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+    list-style: none;
+}
+
+.contact a {
+    color: var(--light);
+}
+
+.contact a:hover {
+    color: var(--accent);
+}
+
 @media screen and (max-width: 992px) {
+    nav ul,
     main,
     .card-container {
         flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
     }
 }
